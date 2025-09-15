@@ -21,19 +21,19 @@ public class PlayerMovement : MonoBehaviour
        
         if (Input.GetKey(KeyCode.W))
         {
-            move += Vector3.forward;
+            move += Vector3.down;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            move += Vector3.back;
+            move += Vector3.up;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            move += Vector3.left;
+            move += Vector3.right;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            move += Vector3.right;
+            move += Vector3.left;
         }
 
         transform.Translate(move * moveSpeed * Time.deltaTime);
