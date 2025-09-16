@@ -33,7 +33,5 @@ public class SceneTransition: MonoBehaviour
     public void OnClick()
     {
         SceneManager.LoadScene("RayeLevel01");
-        // call for start button
->>>>>>> 7cad43856cfd765f4f3a9258f3bb5da59ac5ae7d
     }
 }
