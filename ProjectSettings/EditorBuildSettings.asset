@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RayeLevel01.unity
+    guid: f1f1c2ef0162dc641a0a98de21db1a03
+  - enabled: 1
+    path: Assets/Scenes/YangLevel.unity
+    guid: d685501497f11564db026712b21a1cc7
+  - enabled: 1
+    path: Assets/Scenes/KimLevel.unity
+    guid: 78fd00c6b75f2ca4881afac2b75a547c
   m_configObjects: {}
