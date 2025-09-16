@@ -4749,7 +4749,7 @@ GameObject:
   - component: {fileID: 1053178022}
   - component: {fileID: 1053178021}
   - component: {fileID: 1053178020}
-  - component: {fileID: 1053178025}
+  - component: {fileID: 1053178024}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4844,7 +4844,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1053178025
+--- !u!114 &1053178024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

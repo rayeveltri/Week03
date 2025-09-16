@@ -4,38 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    private Rigidbody rb;
-    private Vector3 movement;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Starting code");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 move = Vector3.zero;
-       
-        if (Input.GetKey(KeyCode.W))
+        public float moveSpeed = 5f;
+        void Update()
         {
-            move += Vector3.down;
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
+            Vector3 move = new Vector3(-h, 0f, -v);
+            transform.Translate(move * moveSpeed * Time.deltaTime, Space.Self);
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            move += Vector3.up;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            move += Vector3.right;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            move += Vector3.left;
-        }
-
-        transform.Translate(move * moveSpeed * Time.deltaTime);
-    }
+    
 }
